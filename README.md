@@ -4,4 +4,4 @@ A simple color guessing game inspired by the Colt Steele's Web Dev Bootcamp on U
 
 ## Notes:
 
-I plan to refactor the code asap and make it more readable and efficient.
+I plan to refactor the code asap to make it more readable and efficient.
