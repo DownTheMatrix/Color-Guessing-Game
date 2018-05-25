@@ -27,6 +27,7 @@ function setupModeButtons() {
 
 function setupSquares() {
 	const squares = document.querySelectorAll(".square");
+	const messageDisplay = document.querySelector("#message");
 	for (let i = 0; i < squares.length; i++) {
 		//add click listeners to squares
 		squares[i].addEventListener("click", function () {
@@ -34,7 +35,6 @@ function setupSquares() {
 			let clickedColor = this.style.background;
 			//compare color to pickedColor
 			if (clickedColor === pickedColor) {
-				const messageDisplay = document.querySelector("#message");
 				messageDisplay.textContent = "Correct!";
 				resetButton.textContent = "Play Again?";
 				changeColors(clickedColor);
@@ -42,7 +42,6 @@ function setupSquares() {
 				h1.style.background = clickedColor;
 			} else {
 				this.style.background = "#232323";
-				const messageDisplay = document.querySelector("#message");
 				messageDisplay.textContent = "Try Again";
 			}
 		});
@@ -72,7 +71,7 @@ function reset() {
 	}
 	let random = Math.floor(Math.random() * colors.length);
 	const h1 = document.querySelector("h1");
-	h1.style.background = colors[random];
+	h1.style.background = "steelblue";
 }
 const resetButton = document.querySelector("#reset");
 resetButton.addEventListener("click", function () {
